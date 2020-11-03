@@ -1,0 +1,12 @@
+{
+  "name": "Localization",
+  "displayName": "Localization",
+  "expo": {
+    "name": "Localization",
+    "slug": "Localization",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
