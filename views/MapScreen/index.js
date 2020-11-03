@@ -31,6 +31,7 @@ export default class MapScreen extends Component {
 
     origin: { latitude: -21.48130, longitude: -56.14412  },
     destination: { latitude: -21.49211, longitude: -56.15616},
+    // destination: { latitude: -21.48498, longitude: -56.14293},
     originText: '',
     destinationText: '',
 
