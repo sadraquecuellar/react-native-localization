@@ -201,11 +201,11 @@ render() {
         </MapView.Callout>
         </MapView.Marker>
 
-        {/* <MapViewDirections
+        <MapViewDirections
           origin={this.state.origin}
           destination={this.state.destination}
           apikey={GOOGLE_MAPS_APIKEY}
-        /> */}
+        />
 
         </MapView>
 
