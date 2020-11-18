@@ -19,8 +19,6 @@ import Geocoder from 'react-native-geocoding';
 
 const GOOGLE_MAPS_APIKEY = 'AIzaSyDx6g2bfcinHOdlp878p8QbrL3KP3zP9do';
 
-// const GOOGLE_MAPS_APIKEY = 'AIzaSyCAy5KIBTa3tixkGU3mWA1295oPoaiSjtg';
-
 const backgroundColor = '#007256';
 
 const { height, width } = Dimensions.get('window');
@@ -90,7 +88,7 @@ export default class MapScreen extends Component {
     let isGranted = await this.requestLocationPermission();
 
     if (isGranted) {
-        this.getLocation();
+      this.getLocation();
     }
 
     this.getLocation();
@@ -116,7 +114,7 @@ export default class MapScreen extends Component {
 
     else {
 
-        alert("Digite a origem ! ")
+      alert("Digite a origem ! ")
 
     }
 
@@ -136,7 +134,7 @@ export default class MapScreen extends Component {
 
     else {
 
-        alert("Digite o destino ! ")
+      alert("Digite o destino ! ")
 
     }
 
@@ -165,7 +163,7 @@ render() {
 
     return(
 
-        <View style={styles.container}>
+      <View style={styles.container}>
 
         <MapView
 
@@ -189,16 +187,16 @@ render() {
           coordinate={this.state.destination}
         >
           <MapView.Callout onPress={this.handleGetGoogleMapDirections}>
-            <Text>Press to Get Direction</Text>
+            <Text>Clique para ir para o Google Maps</Text>
           </MapView.Callout>
         </MapView.Marker>
 
         <MapView.Marker
           coordinate={this.state.origin}
         >
-        <MapView.Callout>
-            <Text>This is where you are</Text>
-        </MapView.Callout>
+          <MapView.Callout>
+            <Text>Ponto de Partida</Text>
+          </MapView.Callout>
         </MapView.Marker>
 
         <MapViewDirections
@@ -232,7 +230,7 @@ render() {
             </TouchableOpacity>
 
         </View>
-
+        
       </View>
 
     );
@@ -249,8 +247,7 @@ container: {
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
 
-  },
-
+},
   map: {
 
     position: 'absolute',
