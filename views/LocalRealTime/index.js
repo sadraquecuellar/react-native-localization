@@ -14,8 +14,8 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const LocalRealTime = () => {
   const [position, setPosition] = useState({
-    latitude: -21.49211,
-    longitude: -56.15616,
+    latitude: -20.4782762,
+    longitude: -54.6265839,
     latitudeDelta: 0.0922,
     longitudeDelta: 0.0421,
   });

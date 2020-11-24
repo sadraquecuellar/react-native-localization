@@ -4,7 +4,7 @@ import MapScreen from './views/MapScreen';
 
 const App = () => {
   return (
-    <MapScreen/>
+    <LocalRealTime/>
   );
 };
 
